@@ -9,8 +9,11 @@
       <meta name="description" content="">
       <meta name="author" content="">
 
-      <title>Selfie competition</title>
-    
+      <title>iConnect</title>
+ 
+      <!-- Flaticon -->
+      <link rel="stylesheet" type="text/css" href="css/flaticon.css">
+
       <!-- Bootstrap core CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
@@ -33,20 +36,21 @@
 
 <body>
       
-      <div class="login-main m-4 p-4">
-    <div class="login-content">
+      <div class="registration-main m-4 p-4">
+    <div class="registration-content">
         <h1 class="instantgram pb-4 mb-4 big-text">Social network</h1>
 
-        <form action="" method="post">
-            <input id="login-email" type="text" name="email" class="form-control mb-1 w-75 mx-auto border bg-fafafa fs-1 py-2" placeholder="Username or email" required="required" />
-            <input id="login-pass" type="password" name="pass" class="form-control mb-1 w-75 mx-auto border bg-fafafa fs-1 py-2" placeholder="Password" required="required" />
-                        <input type="submit" class="btn btn-primary w-75 mb-2 mt-3 fs-1 font-weight-bolder bg-0095F6 p-1 first-button fs-2" value="Log In" />
-        </form>
-        
+            <input type="text" name="name" class="form-control mb-1 w-75 mx-auto border bg-fafafa fs-1 py-2" placeholder="Name and surname" required="required" maxlength="20"/>
+            <input type="email" name="email" class="form-control mb-1 w-75 mx-auto border bg-fafafa fs-1 py-2" placeholder="Email" required="required" />
+            <input type="text" name="username" class="form-control mb-1 w-75 mx-auto border bg-fafafa fs-1 py-2" placeholder="Username" required="required" maxlength="20"/>
+            <input type="text" name="phone" class="form-control mb-1 w-75 mx-auto border bg-fafafa fs-1 py-2" placeholder="Mobile number" />
+            <input type="password" name="pass1" class="form-control mb-1 w-75 mx-auto border bg-fafafa fs-1 py-2" placeholder="Password" required="required" />
+            <input type="password" name="pass2" class="form-control mb-1 w-75 mx-auto border bg-fafafa fs-1 py-2" placeholder="Confirm password" required="required" />
+            <br>            <input type="submit" class="btn btn-primary w-75 mb-2 fs-1 mt-0 font-weight-bolder bg-0095F6 p-1 first-button fs-2" value="Sign up" />
     </div>
-    <div class="login-content d-flex justify-content-center align-items-center flex-column p-3 mb-0">
-        <div class="">
-            <p class="fs-2 mb-0 font-weight-100">Don't have an account? <a href="registration.html" class="fs-2 font-weight-600 sign-a">Sign up</a></p>
+    <div class="registration-content d-flex justify-content-center align-items-center flex-column p-3 mb-0">
+        <div>
+            <p class="fs-2 mb-0 font-weight-100">Have an account? <a href="login.html" class="fs-2 font-weight-600 sign-a">Log in</a></p>
         </div>
     </div>
 </div>
