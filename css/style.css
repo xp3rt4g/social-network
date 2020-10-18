@@ -1,3 +1,232 @@
+body {
+    background-color: #fafafa;
+}
+a:hover{
+    text-decoration: none;
+    color: #00376B;    
+}
+hr{
+    height: 1px;
+}
+input {
+    box-shadow: none !important;
+}
+/*EDIT USER*/
+.fs-custom{
+    font-size: 0.9rem !important;
+}
+.comment {
+    width: 92%;
+    border: none;
+    resize: none;
+    height: 100px;
+}
+@media only screen and (min-width: 768px) {
+    .fs-custom {
+        font-size: 0.8rem !important;
+    }
+    .comment {
+        margin: 0 auto !important;
+        width: 97%;
+        border: none;
+        resize: none;
+        height: 70px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .fs-custom {
+        font-size: 0.9rem !important;
+    }
+    .comment {
+        width: 98%;
+        border: none;
+        resize: none;
+        height: 90px;
+    }
+}
+.w-35 {
+    width: 35%;
+}
+.w-60 {
+    width: 52%;
+}
+.max-content{
+    width: max-content;
+}
+/*INDEX*/
+.fs-matko {
+    font-size: 1.8rem;
+}
+@media only screen and (max-width: 575px){
+    .navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .fs-matko {
+        font-size: 1.4rem;
+    }
+}
+.fs-4{
+    font-size: 0.6rem;
+}
+.img-cover{
+    object-fit: cover;
+}
+
+.w-custom{
+    width: 70% !important;
+}
+@media only screen and (max-width: 1200px) {
+    .w-custom {
+        width: 100% !important;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .scrollbar {
+        height: 190px !important;
+    }
+    .d-670-block{
+        display: block !important;
+    }
+    .h-auto {
+        height: 462px !important;
+    }
+
+    .w-model {
+        height: 462px;
+        width: 770px !important;
+    }
+
+    .img-cover {
+        height: 460px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .h-auto {
+        height: 600px !important;
+    }
+    .scrollbar {
+        height: 300px !important;
+    }
+    .w-model {
+        height: 600px;
+        width: 1000px !important;
+    }
+
+    .img-cover {
+        height: 598px;
+    }
+}
+.bg-fafafa{
+    background-color: none;
+}
+.bg-fafafa:hover{
+    background-color: #d3d3d3;
+}
+.left-auto{
+    top: 36px;
+    left: auto !important;
+    right: auto !important;
+    float: none !important;
+}
+.img-strech{
+    width: 100% !important;
+    object-fit: cover !important;
+    height: 400px !important;
+}
+.w-15{
+    width: 15% !important;
+}
+.custom-width{
+    width: 600px;
+    object-fit: cover;
+}
+.custom-index-div{
+    margin-top: 55px;
+}
+.custom-img{
+    min-width: 60px;
+    min-height: 60px;
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 100%;
+}
+.custom-img1 {
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 100%;
+}
+.custom-img2 {
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 100%;
+}
+@media only screen and (max-width: 768px) {
+    .custom-img2 {
+        max-width: 80px;
+        max-height: 80px;
+        min-width: 80px;
+        min-height: 80px;
+        margin-top: 20px;
+    }
+}
+.line-height{
+    line-height: 1rem;
+}
+/*NAVBAR*/
+.dropdown-menu {
+    margin-top: 10px;
+}
+.profile-pic {
+    position: relative;
+    top: 7px;
+}
+.dropdown-item:active{
+    background-color: #efefef;
+    color: black;
+}
+.navbar-custom{
+    border-bottom: 1px solid #dbdbdb;
+    border-radius: 1px;;
+}
+.c-black{
+    color: black;
+}
+.ml-6 {
+    margin-left: 15%;
+}
+
+.mr-6 {
+    margin-right: 15%;
+}
+.navbar-expand-sm .navbar-nav .dropdown-menu {
+    position: absolute;
+}
+@media only screen and (max-width: 405px) {
+
+    .fs-3{
+        font-size: 1.4rem !important;
+    }
+    .fs-profile {
+        font-size: 0.85rem;
+    }
+    .fs-profile-sm {
+        font-size: 0.8rem;
+    }
+    
+}
+@media only screen and (max-width: 1100px){
+    .mr-6{
+        margin-right: 0;
+    }
+    .ml-6{
+        margin-left: 0;
+    }
+}
 /*LOGIN and REGISTRATION*/
 .btn:active:focus{
     box-shadow: none !important;
