@@ -28,6 +28,9 @@
       <!-- Icon -->
       <script src="https://kit.fontawesome.com/43b4b9f81c.js" crossorigin="anonymous"></script>
 
+      <!-- Pristine JS -->
+      <script src="js/pristine.min.js"></script>
+
 </head>
 
 <body>
@@ -35,12 +38,19 @@
       <div class="login-main m-4 p-4">
     <div class="login-content">
         <h1 class="instantgram pb-4 mb-4 big-text">Social network</h1>
-
-        <form action="index.html" method="">
-            <input id="login-email" type="text" name="email" class="form-control mb-1 w-75 mx-auto border bg-fafafa fs-1 py-2" placeholder="Username or email"/>
-            <input id="login-pass" type="password" name="pass" class="form-control mb-1 w-75 mx-auto border bg-fafafa fs-1 py-2" placeholder="Password"/>
+      <div class="form-container">
+        <form action="index.html" id="form1" novalidate method="POST">
+          <div class="form-group">
+            <input id="login-email" required data-pristine-required-message="Please enter a username" type="text" name="email" class="form-control mb-1 w-75 mx-auto border bg-fafafa fs-1 py-2" placeholder="Username or email" required/>
+          </div>
+          <div class="form-group">
+            <input type="password" id="pwd"  required data-pristine-required-message="Please enter a valid password" data-pristine-pattern= "/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$/" data-pristine-pattern-message="Minimum 8 characters, at least one uppercase letter, one lowercase letter and one number" name="pass" class="form-control mb-1 w-75 mx-auto border bg-fafafa fs-1 py-2" placeholder="Password"/>
+          </div>
+          <div class="form-group">
             <input type="submit" class="btn btn-primary w-75 mb-2 mt-3 fs-1 font-weight-bolder bg-0095F6 p-1 first-button fs-2" value="Log In" />
+          </div>
         </form>
+      </div>
         
     </div>
     <div class="login-content d-flex justify-content-center align-items-center flex-column p-3 mb-0">
@@ -55,7 +65,23 @@
       <p class="m-0 text-center copyright-tag">&copy;2020 Selfie competition</p>
     </div>
   </footer>
+  <script>
+    var pristine;
+    window.onload = function () {
 
+      var form = document.getElementById("form1");
+
+      pristine = new Pristine(form);
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if(pristine.validate()){
+          window.location.href = "index.html";
+        }
+      //alert('Form is valid: ' + valid);
+      });
+    };
+  </script>
   </body>
 
   </html>

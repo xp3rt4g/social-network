@@ -14,6 +14,9 @@ input {
 .like{
     color: red;
 }
+.pristine-error {
+    display: table;
+}
 /*EDIT USER*/
 .fs-custom{
     font-size: 0.9rem !important;
@@ -338,4 +341,24 @@ input {
     color: #8e8e8e;
     text-transform: uppercase;
     text-align: center;
+}
+
+
+/* PRISTINE JS CSS */
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.has-success .form-control {
+    border-bottom: 2px solid #168b3f !important;
+}
+
+.has-danger .form-control {
+    border-bottom: 2px solid #dc1d34 !important;
+}
+
+.form-group .text-help {
+    color: #dc1d34;
+    margin: auto;
 }
