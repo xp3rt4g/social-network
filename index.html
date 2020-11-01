@@ -36,6 +36,10 @@
     <!-- Icon -->
     <script src="https://kit.fontawesome.com/43b4b9f81c.js" crossorigin="anonymous"></script>
 
+    <!-- Parallax scoll -->
+
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+
 </head>
 
 <body>
@@ -48,7 +52,7 @@
                 <div class="form-inline my-2">
                     <input class="form-control dropdown-toggle" type="text" placeholder="Search" name="names"
                         id="search" aria-haspopup="true" aria-expanded="false">
-                    <span type="button" class="fa fa-search"></span>
+                    <span type="button" class="fa fa-search ml-2"></span>
                     <div id="show_up" class="dropdown-menu left-auto dropdown-menu-right"></div>
                 </div>
 
@@ -102,19 +106,10 @@
                     <span class="float-right mt-2 mr-3"></span>
                 </div>
                 <div class="mt-2">
-                    <img type="button" class="img-fluid custom-width" src="images/selfie.jpg" alt="post-pic">
+                    <img type="button" class="img-fluid custom-width slikeparallax" src="images/selfie.jpg" alt="post-pic">
                 </div>
-                <div class="mt-2">
-                    <div class="float-left">
-                        <span class="like"><span class="fa fa-heart"></span></span>
-                    </div>
-                    <div class="float-right mr-2">
-                        <span class="mr-2 fs-2 font-weight-600 sign-a save">Saved</span>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="mt-2 ml-4">
-                    <p class="fs-1 mb-2">Liked by <span class="font-weight-bolder"">1</span></p>
+                <div class="mt-2 ml-2">
+                    <p class="fs-1 mb-2"><span class="like mr-2"><span class="fa fa-heart"></span></span>Liked by <span class="font-weight-bolder"">6</span></p>
                 </div>
                 <div class=" ml-4">
                             <p class="fs-1 mb-1"><span class="font-weight-bolder">user</span> ful lepo</p>
@@ -133,19 +128,11 @@
                     <span class="float-right mt-2 mr-3"></span>
                 </div>
                 <div class="mt-2">
-                    <img type="button" class="img-fluid custom-width" src="images/selfie3.jpg" alt="post-pic">
+                    <img type="button" class="img-fluid custom-width slikeparallax" src="images/selfie3.jpg" alt="post-pic">
                 </div>
-                <div class="mt-2">
-                    <div class="float-left">
-                        <span class="like"><span class="fa fa-heart"></span></span>
-                    </div>
-                    <div class="float-right mr-2">
-                        <span class="mr-2 fs-2 font-weight-600 sign-a save">Saved</span>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="mt-2 ml-4">
-                    <p class="fs-1 mb-2">Liked by <span class="font-weight-bolder"">6</span></p>
+                <div class="mt-2 ml-2">
+                    
+                    <p class="fs-1 mb-2"><span class="like mr-2"><span class="fa fa-heart"></span></span>Liked by <span class="font-weight-bolder"">6</span></p>
             </div>
             <div class=" ml-4">
                             <p class="fs-1 mb-1"><span class="font-weight-bolder">user 2</span> #selfie mode</p>
@@ -165,20 +152,11 @@
                     <span class="float-right mt-2 mr-3"></span>
                 </div>
                 <div class="mt-2">
-                    <img type="button" class="img-fluid custom-width" src="images/selfie2.jpg" alt="post-pic">
+                    <img type="button" class="img-fluid custom-width slikeparallax" src="images/selfie2.jpg" alt="post-pic">
                 </div>
-                <div class="mt-2">
-                    <div class="float-left">
-                        <span class="like"><span class="fa fa-heart"></span></span>
-                    </div>
-                    <div class="float-right mr-2">
-                        <span class="mr-2 fs-2 font-weight-600 sign-a save">Saved</span>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="mt-2 ml-4">
-                    <p class="fs-1 mb-2">Liked by <span class="font-weight-bolder"">23</span></p>
-</div>
+                <div class="mt-2 ml-2">
+                    <p class="fs-1 mb-2"><span class="like mr-2"><span class="fa fa-heart"></span></span>Liked by <span class="font-weight-bolder"">6</span></p>
+                 </div>
 <div class=" ml-4">
                             <p class="fs-1 mb-1"><span class="font-weight-bolder">user3</span> winning this selfie
                                 Competition EZ</p>
@@ -287,13 +265,14 @@
                     <div class="column w-model ">
                         <div class="row h-auto">
                             <div class="d-none d-670-block col-8 pr-0">
-                                <img class="img-fluid img-cover" src="images/selfie.jpg">
+                                <img class="img-fluid img-cover images" src="images/selfie.jpg">
                             </div>
                             <div class="col col-md-4 pl-0">
                                 <div class="">
                                     <div class="mb-1 px-3 mt-3" role="button">
                                         <img class="custom-img1 mr-3" src="images/profile.png" alt="profile-pic">
                                         <span class="font-weight-bolder fs-custom mt-1">uporabnik 1</span>
+
                                     </div>
                                     <hr>
                                     <div id="wraper" class="pr-1 pl-2">
@@ -333,18 +312,10 @@
                                     </div>
                                     <hr>
                                     <div>
-                                        <div class="float-left ml-2 ml-sm-0">
-
-                                            <span class="like fs-custom"><span class="fa fa-heart"></span></span>
-                                        </div>
-                                        <div class="float-right mr-2">
-
-                                            <span class="fs-custom mr-2 fs-2 font-weight-600 sign-a save">Saved</span>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <div class="mx-3 mt-3">
-                                            <p class="fs-custom mb-2 float-left">Liked by <span
-                                                    class="font-weight-bolder">1</span></p>
+                                        
+                                        <div class="mx-3 mb-2">
+                                            <p class="fs-custom mb-2 float-left"><span class="like fs-custom mr-1"><span class="fa fa-heart"></span></span>Liked by <span
+                                                    class="font-weight-bolder">6</span></p>
                                             <span class="fs-custom fs-2 font-weight-600 sign-a float-right commenttext"
                                                 role="button">Comment</span>
                                             <div class="clearfix"></div>
@@ -371,7 +342,7 @@
                     <div class="column w-model ">
                         <div class="row h-auto">
                             <div class="d-none d-670-block col-8 pr-0">
-                                <img class="img-fluid img-cover" src="images/selfie3.jpg">
+                                <img class="img-fluid img-cover images" src="images/selfie3.jpg">
                             </div>
                             <div class="col col-md-4 pl-0">
                                 <div class="">
@@ -413,21 +384,13 @@
 
                                             </div>
                                         </div>
-                                        <div class="clearfix"></div>
                                     </div>
                                     <hr>
                                     <div>
                                         <div class="float-left ml-2 ml-sm-0">
-
-                                            <span class="like fs-custom"><span class="fa fa-heart"></span></span>
                                         </div>
-                                        <div class="float-right mr-2">
-
-                                            <span class="fs-custom mr-2 fs-2 font-weight-600 sign-a save">Saved</span>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <div class="mx-3 mt-3">
-                                            <p class="fs-custom mb-2 float-left">Liked by <span
+                                        <div class="mx-3 mb-2">
+                                            <p class="fs-custom mb-2 float-left"><span class="like fs-custom mr-1"><span class="fa fa-heart"></span></span>Liked by <span
                                                     class="font-weight-bolder">6</span></p>
                                             <span class="fs-custom fs-2 font-weight-600 sign-a float-right commenttext"
                                                 role="button">Comment</span>
@@ -456,7 +419,7 @@
                     <div class="column w-model ">
                         <div class="row h-auto">
                             <div class="d-none d-670-block col-8 pr-0">
-                                <img class="img-fluid img-cover" src="images/selfie2.jpg">
+                                <img class="img-fluid img-cover images" src="images/selfie2.jpg">
                             </div>
                             <div class="col col-md-4 pl-0">
                                 <div class="">
@@ -502,18 +465,10 @@
                                     </div>
                                     <hr>
                                     <div>
-                                        <div class="float-left ml-2 ml-sm-0">
 
-                                            <span class="like fs-custom"><span class="fa fa-heart"></span></span>
-                                        </div>
-                                        <div class="float-right mr-2">
-
-                                            <span class="fs-custom mr-2 fs-2 font-weight-600 sign-a save">Saved</span>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <div class="mx-3 mt-3">
-                                            <p class="fs-custom mb-2 float-left">Liked by <span
-                                                    class="font-weight-bolder">23</span></p>
+                                        <div class="mx-3 mb-2">
+                                            <p class="fs-custom mb-2 float-left"><span class="like fs-custom mr-1"><span class="fa fa-heart"></span></span>Liked by <span
+                                                    class="font-weight-bolder">6</span></p>
                                             <span class="fs-custom fs-2 font-weight-600 sign-a float-right commenttext"
                                                 role="button">Comment</span>
                                             <div class="clearfix"></div>
@@ -530,7 +485,10 @@
                 </div>
             </div>
         </div>
-
+        <script>
+            var images = document.getElementsByClassName('slikeparallax');
+            new simpleParallax(images);
+        </script>
     </div>
     <!-- Footer -->
     <footer>

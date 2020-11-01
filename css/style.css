@@ -11,6 +11,9 @@ hr{
 input {
     box-shadow: none !important;
 }
+.like{
+    color: red;
+}
 /*EDIT USER*/
 .fs-custom{
     font-size: 0.9rem !important;
