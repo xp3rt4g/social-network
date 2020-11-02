@@ -59,7 +59,7 @@
     <div class="login-content">
       <h1 class="instantgram pb-4 mb-4 big-text">Social network</h1>
       <div class="form-container">
-        <form action="index.html" id="form1" novalidate method="POST">
+        <form action="home.html" id="form1" novalidate method="POST">
           <div class="form-group">
             <input id="username" required data-pristine-required-message="Please enter a username" type="text"
               name="email" class="form-control mb-1 w-75 mx-auto border bg-fafafa fs-1 py-2"
@@ -111,40 +111,40 @@
         form.addEventListener('submit', function (e) {
           e.preventDefault();
           if (pristine.validate()) {
-            if($("#pwd").val() === "Password123"){
+            if ($("#pwd").val() === "Password123") {
 
-            
-            var name = $('#username').val();
-            Swal.fire({
-              title: "Login successful!",
-              text: "You successfully logged in!",
-              icon: "success",
-              button: "Continue!",
-            }).then(function () {
-              if ($('#remember').is(":checked")) {
-                localStorage.setItem("username", name);
-                window.location.href = "index.html";
-              }
-              else {
-                sessionStorage.setItem("username", name);
-                window.location.href = "index.html";
-              }
-            });
-          }
-          else{
-            Swal.fire({
-              title: "Wrong password!",
-              text: "The password is incorrect!",
-              icon: "error",
-              button: "I'll try again!",
-            })
-          }
+
+              var name = $('#username').val();
+              Swal.fire({
+                title: "Login successful!",
+                text: "You successfully logged in!",
+                icon: "success",
+                button: "Continue!",
+              }).then(function () {
+                if ($('#remember').is(":checked")) {
+                  localStorage.setItem("username", name);
+                  window.location.href = "home.html";
+                }
+                else {
+                  sessionStorage.setItem("username", name);
+                  window.location.href = "home.html";
+                }
+              });
+            }
+            else {
+              Swal.fire({
+                title: "Wrong password!",
+                text: "The password is incorrect!",
+                icon: "error",
+                button: "I'll try again!",
+              })
+            }
           }
           //alert('Form is valid: ' + valid);
         });
       }
       else {
-        window.location.href = "index.html";
+        window.location.href = "home.html";
       }
     };
   </script>
